@@ -7,8 +7,8 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background-color: #f5da80;
-  background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png");
+  background-color: #f5d96a;
+  background-image: url("https://www.transparenttextures.com/patterns/wild-flowers.png");
   padding: 0 16px;
 }
 
@@ -60,7 +60,7 @@ footer p {
   position: relative;
   float: right;
   margin-right: 10px;
-  color: #f5ba13;
+  color: #f51313;
   border: none;
   width: 36px;
   height: 36px;
@@ -75,7 +75,7 @@ form.create-note {
   background: #fff;
   padding: 15px;
   border-radius: 7px;
-  box-shadow: 0 1px 5px rgb(138, 137, 137);
+  box-shadow: 0 1px 5px rgb(112, 111, 111);
 }
 form.create-note input,
 form.create-note textarea {
@@ -91,13 +91,13 @@ form.create-note button {
   position: absolute;
   right: 18px;
   bottom: -18px;
-  background: #f5ba13;
+  background: #f5b403;
   color: #fff;
   border: none;
   border-radius: 50%;
   width: 48px;
   height: 48px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px rgba(51, 49, 49, 0.3);
   cursor: pointer;
   outline: none;
 }

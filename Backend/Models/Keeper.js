@@ -7,7 +7,7 @@ mongoose.connect(process.env.ATLAS_URL, { useNewUrlParser: true, useUnifiedTopol
 const keeperSchema = mongoose.Schema(
     {
         title:{type:String,required:true},
-        desc:{type:String}
+        content:{type:String}
     }
 );
 

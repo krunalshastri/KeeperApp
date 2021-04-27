@@ -8,9 +8,11 @@ router.route("/").get(function(req,res){
 });
 
 router.route("/add").post(function(req,res){
+
+    // console.log(req.body);
     const KN = new Keeper({
         title: req.body.title,
-        desc: req.body.desc
+        content: req.body.content
     });
 
     KN.save()
@@ -22,7 +24,7 @@ router.route("/delete/:id").delete(function(req,res){
     const deleteId = req.params.id;
     
     Keeper.findByIdAndDelete(deleteId)
-     .then((finalList) => res.json("Note Deleted!!"))
+     .then(() => res.json("Note Deleted!!"))
      .catch(() => res.json("Error occured!!"));
 });
 
