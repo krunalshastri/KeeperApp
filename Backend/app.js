@@ -10,12 +10,13 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-if(process.env.MOD_ENV === "production"){
-    app.use(express.static("../Frontend/build"));
+if(process.env.NODE_ENV === "production"){
+    app.use(express.static("Frontend/build"));
 }
 
 app.use("/keeperNotes",keeperRouter);
 
-app.listen(process.env.PORT || 5000,function(){
-    console.log("Server is running!!");
+const PORT = process.env.PORT || 5000;
+app.listen(PORT,function(){
+    console.log(`Server is running at ${PORT}!!`);
 });

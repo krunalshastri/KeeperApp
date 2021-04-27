@@ -13,7 +13,7 @@ function App() {
     if(isMounted)
     {
       console.log("Get request!!");
-      axios.get("http://localhost:5000/keeperNotes/")
+      axios.get("https://keeper-app-mern.herokuapp.com/keeperNotes/")
         .then((finalList) => 
             setNotes(finalList.data)
           );
@@ -23,7 +23,7 @@ function App() {
   }, [isMounted]);
 
   function addNote(newNote) {
-    axios.post("http://localhost:5000/keeperNotes/add", newNote)
+    axios.post("https://keeper-app-mern.herokuapp.com/keeperNotes/add", newNote)
       .then(() => 
       {
         console.log("Added!!");
@@ -32,7 +32,7 @@ function App() {
   }
 
   function deleteNote(id) {
-    axios.delete("http://localhost:5000/keeperNotes/delete/" + id)
+    axios.delete("https://keeper-app-mern.herokuapp.com/keeperNotes/delete/" + id)
       .then(() => 
       {
         console.log("Deleted!!");
